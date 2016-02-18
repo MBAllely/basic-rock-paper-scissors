@@ -1,0 +1,81 @@
+http://portland.craigslist.org/wsc/zip/5453774401.html
+
+http://portland.craigslist.org/mlt/zip/5452275680.html
+
+http://portland.craigslist.org/mlt/zip/5422329988.html
+I can fix this up so it looks less terrible
+
+<?php
+    /**
+     *Rock Paper Scissor Game
+     **/
+    class Game
+    {
+        //playGame takes in the input hand 1 and 2
+        function playGame($hand_one, $hand_two = 'Computer')
+        {
+            //computer
+            if($hand_two == 'Computer') {
+                $computer = rand(1,3);
+                if($computer == 1) {
+                    $hand_two = 'rock';
+                } elseif ($computer == 2) {
+                    $hand_two = 'scissors';
+                } else {
+                    $hand_two = 'paper';
+                }
+            }
+            //game
+            if($hand_one == $hand_two) {
+                return 'Tie';
+            }
+            if($hand_one == 'rock') {
+                if($hand_two == 'scissors') {
+                    return 'Player 1';
+                }
+                return 'Player 2';
+            } elseif($hand_one == 'scissors') {
+                if($hand_two == 'paper') {
+                    return 'Player 1';
+                }
+                return 'Player 2';
+            } elseif($hand_one == 'paper') {
+                if($hand_two == 'rock') {
+                    return 'Player 1';
+                }
+                return 'Player 2';
+            }
+        }
+    }
+?>
+
+class myCombat {
+
+    private $hAttack;
+    private $mDefend;
+    private $mAttack;
+    private $hDefend;
+    private $mDamage;
+    private $hDamage;
+
+    function rollSim() {
+        $this->hAttack = rand(1, 20);
+        $this->mDefend = rand(1, 20);
+        $this->mAttack = rand(1, 20);
+        $this->hDefend = rand(1, 20);
+        $this->mDamage = rand(10, 25);
+        $this->hDamage = rand(1, 20);
+    }
+
+    function combatSim() {
+        $this->rollSim();
+        if($this->hAttack > $this->mDefend)
+            echo 'Hero hit monster for ' . $this->hDamage . ' damage.<br />';
+        else
+            echo 'Hero missed monster';
+    }
+
+}
+
+$combat = new myCombat;
+$combat->combatSim();
