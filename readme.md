@@ -1,48 +1,35 @@
-# _Template for PHP w/ Silex, Twig, and PHPUnit_
+# Basic Rock Paper Scissors
 
-#### _A simple template, 2.12.2016_
-
-### By _**Joseph Karasek**_
+#### By Marika Allely
 
 ## Description
 
-_This web app is designed to collect and display contact information for a number of people (basic address book). Contacts can be created, stored, deleted individually, or deleted as a group. The app was built using the micro-framework Silex, as well as Bootstrap._
+#### This app was built as an exercise for Epicodus and is not meant to be replicated.  I'm keeping it here for my own records, and for nostalgia's sake.  Feel free to play with it, but be aware that it is not a complete project.
 
-_The goal of this code review is to show basic understanding and competency with php and the Silex micro-framework, including the ability to create, store, and delete instants of a given class._
-
-_The code review will consider the following criteria.._
-* Does your Contact object have all our ingredients? It should have a constructor, private properties, getters, setters, a save method, a getAll method and a deleteAll method.
-* Were Twig template files used for all pages?
-* Are Contacts being saved into the session and cleared correctly?
-* Is your logic easy to understand?
-* Did you use descriptive variable names?
-* Does your code have proper indentation and spacing?
-* Did you include a README with a description of the program, setup instructions, a copyright, a license, and your name?
-* Is the project tracked in Git, and did you regularly make commits with clear messages that finish the phrase "This commit will…"?
+_A basic rock paper scissors game.  Written in php._
 
 ## Setup/Installation Requirements
 
-1. _Fork and clone this repository from_ [gitHub](https://github.com/joekarasek/epicodus-php-address_book.git).
-2. Navigate to the root directory of the project in which ever CLI shell you are using and run the command: __composer install__ .
-3. Create a local server in the /web directory within the project folder using the command: __php -S localhost:8000__ (assuming you are using a mac).
-4. Open the directory http://localhost:8000 in any standard web browser.
+* Clone this repository from [gitHub](https://github.com/MBAllely/basic-rock-paper-scissors)
+* Open terminal and run the command 'composer install' in the new project folder
+* In the terminal, change directories to the web folder, run the command 'php -S localhost:8000' to run your local server
+* Open browser and navigate to http://localhost8000
+* Must be connected to the internet for bootstrap and images to render
 
 ## Known Bugs
-
-_This application is not fully designed and may have unknown bugs._
-
-_Currently, instants of Contact are assigned a random 6 digit ID. There is a tiny chance that multiple contacts may share an ID, deleting one of those contacts will cause the first (in order of creation) contact with that ID to be deleted._
+_As previously stated, this is not a complete project._
 
 ## Support and contact details
 
-_If you have any questions, concerns, or feedback, please contact the author through_ [gitHub](https://github.com/joekarasek/epicodus-php-address_book.git).
+_If you have any questions, concerns, or feedback, please contact me through_ [gitHub](https://github.com/MBAllely).
+_Or send me weird photos, like cats wearing socks.  I like those._
 
 ## Technologies Used
 
-_This web application was created using the_  [Silex micro-framework](http://silex.sensiolabs.org/)_, as well _[Twig](http://twig.sensiolabs.org/), a template engine for php.
+This program uses HTML, CSS, Bootstrap, PHP, Silex, and Twig
 
 ### License
 
-MIT License.
+This software is licensed under the MIT license
 
-Copyright (c) 2016 **_Joseph Karasek_**
+Copyright (c) 2016 _**Marika 'Crash' Allely**_
